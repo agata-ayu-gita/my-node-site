@@ -7,19 +7,19 @@ import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Experience } from './components/Experience';
-import { Skills } from './components/Skills';
-import { CaseStudies } from './components/CaseStudies';
+import { Education } from './components/Education';
 import { Footer } from './components/Footer';
+import { experience, consultingExperience } from './data/content';
 
 function App() {
   return (
-    <div className="bg-[#0a0a0a] min-h-screen text-white selection:bg-blue-500 selection:text-white">
+    <div className="bg-white min-h-screen text-slate-900 selection:bg-amber-500 selection:text-white">
       <Navbar />
       <main>
         <Hero />
-        <Experience />
-        <Skills />
-        <CaseStudies />
+        <Experience title="Product Management Experience" data={experience} />
+        <Experience title="Consulting & Research" data={consultingExperience} />
+        <Education />
       </main>
       <Footer />
     </div>

@@ -10,13 +10,13 @@ import {
 } from 'lucide-react';
 
 export const personalInfo = {
-  name: "Alex Sterling",
+  name: "Agata Ayu Gita",
   title: "Senior Product Manager",
   tagline: "Building Scalable Products at the Intersection of Data and UX",
   bio: "I specialize in transforming complex data into intuitive product experiences. With a background in engineering and a passion for design, I bridge the gap between technical feasibility and user delight.",
-  email: "alex.sterling@example.com",
+  email: "agataayugita@gmail.com",
   social: {
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/agataayugita/",
     github: "https://github.com",
     twitter: "https://twitter.com"
   }
@@ -25,41 +25,115 @@ export const personalInfo = {
 export const experience = [
   {
     id: 1,
-    role: "Senior Product Manager",
-    company: "TechFlow Inc.",
-    period: "2021 - Present",
-    description: "Leading the core platform team responsible for user acquisition and retention.",
-    achievements: [
-      "Spearheaded a product-led growth initiative that increased DAU by 45% in 6 months.",
-      "Launched a new analytics dashboard, driving a $2M increase in annual recurring revenue (ARR).",
-      "Optimized the onboarding funnel, reducing drop-off rates by 22%."
+    company: "Traveloka Indonesia, Tangerang, Indonesia",
+    description: "One of the leading Online Travel Agents in Southeast Asia",
+    period: "May 2019 - Jul 2025",
+    roles: [
+      {
+        title: "Product Manager - Content Supply Domain - Accommodation",
+        period: "Jan 2024 - Jul 2025",
+        achievements: [
+          "Boosted room mapping throughput by 38% by conceptualising and shipping AI enhancements derived from large-scale data analysis, collaborating with an agile squad of machine learning engineers.",
+          "Achieved 3x scalability and a 50% cost reduction by implementing a GenAI-based translation solution.",
+          "Expanded property supply by 1 million by building a new digital sourcing pipeline from the ground up."
+        ]
+      },
+      {
+        title: "Product Manager - Flexibility & Google Hotel Ads Features",
+        period: "Mar 2022 - Dec 2023",
+        achievements: [
+          "Drove >300% transaction growth in under six months by designing a new user journey for the 'Flexible Payment' feature and managing its complex, on-time launch across 20+ cross-functional teams.",
+          "Delivered 10x transaction growth and a 70% infrastructure cost reduction in one year by spearheading an integration with Google Hotel Ads and using data to optimise scalability."
+        ]
+      },
+      {
+        title: "Senior Associate Product Manager - International Growth",
+        period: "May 2019 - Feb 2022",
+        achievements: [
+          "Achieved 2x product growth during the pandemic by expanding the 'Pay upon Check-in' feature to new markets while ensuring acceptable cancellation risks.",
+          "Contributed 25% of total campaign bookings by designing the 'Acquisition Game,' a creative gamification strategy derived from analysing user behavior to maximize incentivised referrals."
+        ]
+      }
+    ]
+  }
+];
+
+export const consultingExperience = [
+  {
+    id: 1,
+    company: "IBM, London, United Kingdom",
+    description: "",
+    period: "Mar 2026 - Apr 2026",
+    roles: [
+      {
+        title: "MBA Consultant (via Cambridge Global Consulting Project)",
+        period: "Mar 2026 - Apr 2026",
+        achievements: [
+          "Architected a Go-to-Market strategy to secure FMCG client engagements, translating AI trends (GenAI, Agentic, Predictive) into pragmatic front-office transformations, focusing on the B2B infrastructure layer and specific FMCG front-office client gaps backed by IBM's competitive advantage."
+        ]
+      }
     ]
   },
   {
     id: 2,
-    role: "Product Manager",
-    company: "DataSphere",
-    period: "2018 - 2021",
-    description: "Managed the end-to-end lifecycle of data visualization tools for enterprise clients.",
-    achievements: [
-      "Delivered 3 major product releases ahead of schedule, resulting in a 15% increase in customer satisfaction (CSAT).",
-      "Collaborated with engineering to migrate legacy infrastructure to a microservices architecture.",
-      "Implemented A/B testing frameworks to validate feature hypotheses."
+    company: "Boston Consulting Group, Jakarta, Indonesia",
+    description: "",
+    period: "Apr 2018 - Apr 2019",
+    roles: [
+      {
+        title: "Business Analyst",
+        period: "Apr 2018 - Apr 2019",
+        achievements: [
+          "Designed transformation of sales processes for 20,000+ retail agents by validating the business case of an MVP chatbot-based lead generation product that integrated with operational data.",
+          "Formulated a 2.5-year market entry roadmap for a conglomerate based on data-driven market insights.",
+          "Executed change management by communicating a banking digital transformation to 10,000+ employees."
+        ]
+      }
     ]
   },
   {
     id: 3,
-    role: "Associate Product Manager",
-    company: "Innovate Labs",
-    period: "2016 - 2018",
-    description: "Supported product strategy and execution for mobile applications.",
-    achievements: [
-      "Conducted user research and competitive analysis to inform the roadmap for a new mobile app.",
-      "Managed the backlog and sprint planning for a cross-functional team of 8 developers.",
-      "Launched a beta program with 500+ users to gather early feedback."
+    company: "System Engineering Simulation & Modelling Laboratory (University of Indonesia), Depok, Indonesia",
+    description: "",
+    period: "Mar 2016 - Feb 2018",
+    roles: [
+      {
+        title: "Research Assistant",
+        period: "Mar 2016 - Feb 2018",
+        achievements: [
+          "Analysed coastal Special Economic Zone development using a system dynamics model to provide actionable policy recommendations to the Indonesia Secretariat General of the National Council."
+        ]
+      }
     ]
   }
 ];
+
+export const education = [
+  {
+    institution: "University of Cambridge - Judge Business School, Cambridge, UK",
+    period: "Sep 2025 - Sep 2026",
+    degree: "MBA",
+    description: "Fully-funded MBA by the Indonesian Endowment Fund for Education Agency."
+  },
+  {
+    institution: "University of Indonesia, Depok, Indonesia",
+    period: "Sep 2014 - Jan 2018",
+    degree: "B.Eng. in Industrial Engineering (Cum Laude)",
+    description: "Top 5 graduate of the faculty, and a Tanoto Foundation Scholar."
+  }
+];
+
+export const additionalInfo = {
+  nationality: "Indonesian",
+  languages: ["English (fluent)", "Indonesia (native)"],
+  achievements: [
+    "Top 10 Young Leaders Indonesia National IX by McKinsey & Company (2017)",
+    "Chief Information Officer at Students' Consulting Club University of Indonesia (2017)",
+    "2nd Runner Up of Industrial & Systems Engineering Competition Indonesia (2017)",
+    "Top 7 and Talented Winner of 'Putra Putri Batik Nusantara' National Pageants (2016)"
+  ],
+  interests: "Travelling & involved in multiple Indonesian theatrical and musical performances."
+};
 
 export const skills = [
   {

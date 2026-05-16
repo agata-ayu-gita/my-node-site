@@ -16,20 +16,18 @@ export const Navbar = () => {
 
   const navLinks = [
     { name: 'Experience', href: '#experience' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Case Studies', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ];
 
   return (
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'glass py-4' : 'bg-transparent py-6'
+        scrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-        <a href="#" className="text-xl font-bold tracking-tight">
-          PM<span className="text-blue-500">.</span>
+        <a href="#" className="text-xl font-bold tracking-tight text-slate-900">
+          Agata Ayu Gita<span className="text-amber-500">.</span>
         </a>
 
         {/* Desktop Nav */}
@@ -38,7 +36,7 @@ export const Navbar = () => {
             <a 
               key={link.name} 
               href={link.href} 
-              className="text-sm text-gray-400 hover:text-white transition-colors"
+              className="text-sm text-slate-600 hover:text-amber-600 transition-colors"
             >
               {link.name}
             </a>
@@ -47,7 +45,7 @@ export const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-white"
+          className="md:hidden text-slate-900"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -61,14 +59,14 @@ export const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#0a0a0a] border-b border-white/10 overflow-hidden"
+            className="md:hidden bg-white border-b border-slate-200 overflow-hidden"
           >
             <div className="flex flex-col p-6 gap-4">
               {navLinks.map((link) => (
                 <a 
                   key={link.name} 
                   href={link.href} 
-                  className="text-lg text-gray-300 hover:text-white"
+                  className="text-lg text-slate-700 hover:text-amber-600"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
